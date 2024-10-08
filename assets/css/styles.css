@@ -1,0 +1,66 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,500);
+
+/* Kontainer */
+.container {
+    overflow: hidden;
+}
+
+/* Baris */
+.row {
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Foto Profil - img */
+.foto-profil {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*  */
+.kelompok {
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    color: #8d97ad;
+    font-weight: 300;
+}
+
+
+.kelompok h1,
+.kelompok h2,
+.kelompok h3,
+.kelompok h4,
+.kelompok h5,
+.kelompok h6 {
+    color: #3e4555;
+}
+
+.kelompok .font-berat-ringan {
+    font-weight: 500;
+}
+
+.kelompok h5 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.kelompok .subjudul {
+    color: #8d97ad;
+    line-height: 24px;
+    font-size: 13px;
+}
+
+.kelompok ul li a {
+    color: #8d97ad;
+    padding-right: 15px;
+    transition: 0.1s ease-in;
+}
+
+.kelompok ul li a:hover {
+    transform: translate3d(0px, -5px, 0px);
+    color: #316ce8;
+}
