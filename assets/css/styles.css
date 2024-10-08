@@ -33,7 +33,7 @@ h6 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(assets/img/background-1.jpg);
+    background-image: url(./assets/img/background-1.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -84,19 +84,19 @@ a {
 
 .pertama {
     color: var(--warna-putih);
-    background-image: url(assets/img/background-1.jpg);
+    background-image: url(./assets/img/background-1.jpg);
     background-attachment: fixed;
     height: auto;
 }
 
 .kedua {
-    background-image: url(assets/img/background-2.jpg);
+    background-image: url(./assets/img/background-2.jpg);
     background-attachment: fixed;
     height: auto;
 }
 
 .ketiga {
-    background-image: url(assets/img/background-3.jpg);
+    background-image: url(./assets/img/background-3.jpg);
     background-attachment: fixed;
     height: auto;
 }
