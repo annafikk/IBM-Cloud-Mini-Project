@@ -1,161 +1,228 @@
+/* Import Font dari Google API */
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
 
+/* Global */
 :root {
-    --warna-putih: #fff;
-    --warna-hitam: #000;
+    --warna-putih: #fff; /* Variabel warna putih */
+    --warna-hitam: #000; /* Variabel warna hitam */
+    --warna-emas: #dcb818; /* Variabel warna emas */
 }
 
+/* Tag HTML */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Mengaktifkan scroll yang halus */
 }
 
+/* Tag Body */
 body {
-    font-family: 'Red Hat Text', sans-serif;
-    margin: 0;
-    top: 0;
+    font-family: 'Red Hat Text', sans-serif; /* Mengatur font untuk seluruh body */
+    margin: 0; /* Menghilangkan margin default */
+    top: 0; /* Mengatur posisi atas */
 }
 
+/* Tag Heading */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+    margin: 0; /* Menghilangkan margin untuk heading */
 }
 
-.container {
-    text-align: center;
-    color: var(--warna-2);
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../img/background-1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
+/* Tag Heading 1 - Spesifik */
 h1 {
-    color: var(--warna-2);
-    font-weight: 700;
-    font-size: 3rem;
+    color: var(--warna-2); /* Mengatur warna heading 1 */
+    font-weight: 700; /* Menentukan ketebalan font */
+    font-size: 3rem; /* Mengatur ukuran font */
 }
 
+/* Tag Heading 3 - Spesifik */
 h3 {
-    font-weight: 700;
-    font-size: 1.6rem;
+    font-weight: 700; /* Menentukan ketebalan font */
+    font-size: 1.6rem; /* Mengatur ukuran font */
 }
 
+/* Tag Paragraf */
 p {
-    line-height: 1.5;
+    line-height: 1.5; /* Mengatur tinggi garis untuk paragraf */
 }
 
+/* Tag Span */
+span {
+    color: red; /* Mengatur warna untuk span */
+}
+
+/* Tag Span2 */
+span2 {
+    color: var(--warna-emas); /* Mengatur warna untuk span2 */
+}
+
+/* Tag Anchor (Link) */
 a {
-    display: inline-block;
-    padding: 1em 3.5em;
-    background-color: var(--warna-putih);
-    color: var(--warna-hitam);
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 0.3em;
-    font-weight: 700;
-    letter-spacing: .5px;
-    font-size: .875rem;
+    width: auto; /* Membiarkan lebar otomatis */
+    display: inline-block; /* Mengubah tampilan menjadi inline-block */
+    padding: 16px 32px; /* Mengatur padding dalam tombol */
+    background-color: var(--warna-putih); /* Warna latar belakang */
+    color: var(--warna-hitam); /* Warna teks */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+    border: 2px solid #555555; /* Menambahkan border */
+    border-radius: 0.3em; /* Membulatkan sudut */
+    font-weight: 700; /* Menentukan ketebalan font */
+    letter-spacing: .5px; /* Mengatur jarak antar huruf */
+    font-size: 16px; /* Mengatur ukuran font */
+    text-align: center; /* Mengatur teks berada di tengah */
+    transition-duration: 0.4s; /* Durasi transisi untuk efek hover */
+    cursor: pointer; /* Mengubah kursor saat hover */
 }
 
+/* Tag Anchor (Link) pada Section Tengah */
+.kolom-tengah {
+    width: 80px; /* Membiarkan lebar otomatis */
+    display: inline-block; /* Mengubah tampilan menjadi inline-block */
+    padding: 12px 20px; /* Mengatur padding dalam tombol */
+    font-size: 10px; /* Mengatur ukuran font */
+}
+
+/* Efek Hover untuk Tag Anchor */
+a:hover {
+    background-color: var(--warna-hitam); /* Warna latar belakang saat hover */
+    color: var(--warna-putih); /* Warna teks saat hover */
+}
+
+/* Aturan untuk class none */
+a.none {
+    padding: 0; /* Atur padding sesuai kebutuhan */
+    background-color: transparent; /* Warna latar belakang transparan */
+    color: var(--warna-emas); /* Menggunakan warna teks dari elemen induk */
+    border: none; /* Menghilangkan border */
+    text-transform: none; /* Menghilangkan transformasi teks */
+    font-weight: normal; /* Mengatur ketebalan font */
+    font-size: inherit; /* Menggunakan ukuran font dari elemen induk */
+    text-align: inherit; /* Menggunakan alignment dari elemen induk */
+    transition: none; /* Menghilangkan efek transisi */
+    cursor: default; /* Mengubah kursor menjadi default */
+}
+
+/* Efek Hover untuk class none */
+a.none:hover {
+    background-color: transparent; /* Warna latar belakang saat hover tetap transparan */
+    color: var(--warna-emas); /* Menggunakan warna teks dari elemen induk saat hover */
+    text-decoration: underline; /* Menggarisbawahi teks saat hover */
+}
+
+/* Container untuk Ketiga Section */
+.container {
+    text-align: center; /* Mengatur teks agar berada di tengah */
+    color: var(--warna-2); /* Mengatur warna teks */
+    width: 100%; /* Mengatur lebar 100% */
+    min-height: 100vh; /* Minimal tinggi 100% viewport */
+    display: flex; /* Menggunakan flexbox */
+    flex-direction: column; /* Mengatur arah kolom */
+    align-items: center; /* Mengatur item agar berada di tengah secara horizontal */
+    justify-content: center; /* Mengatur item agar berada di tengah secara vertikal */
+    background-image: url(../img/background-1.jpg); /* Menambahkan gambar latar belakang */
+    background-size: cover; /* Memastikan gambar menutupi area */
+    background-position: center; /* Menempatkan gambar di tengah */
+    background-attachment: fixed; /* Gambar latar belakang tetap saat scroll */
+}
+
+/* Pembatas Ketiga Section */
 .blank,
 .other {
-    width: 100%;
-    min-height: 20vh;
-    background-color: var(--warna-1);
+    width: 100%; /* Lebar 100% */
+    min-height: 18vh; /* Minimal tinggi 18% viewport */
+    background-color: var(--warna-1); /* Warna latar belakang */
 }
 
+/* Untuk Section Tengah */
 .row-kedua-bagian-pertama {
-    padding: 40px;
+    padding: 40px; /* Mengatur padding untuk bagian pertama */
 }
 
 .row-kedua-bagian-kedua {
-    padding: 20px 80px 80px 80px;
+    padding: 20px 80px 80px 80px; /* Mengatur padding untuk bagian kedua */
 }
 
+/* Gambar Background Ketiga Section */
 .pertama {
-    color: var(--warna-putih);
-    background-image: url(../img/background-1.jpg);
-    background-attachment: fixed;
-    height: auto;
+    color: var(--warna-putih); /* Warna teks untuk bagian pertama */
+    background-image: url(../img/background-1.jpg); /* Gambar latar belakang */
+    background-attachment: fixed; /* Gambar latar belakang tetap saat scroll */
+    height: auto; /* Tinggi otomatis */
 }
 
 .kedua {
-    background-image: url(../img/background-2.jpg);
-    background-attachment: fixed;
-    height: auto;
+    background-image: url(../img/background-2.jpg); /* Gambar latar belakang */
+    background-attachment: fixed; /* Gambar latar belakang tetap saat scroll */
+    height: 700px; /* Tinggi tetap 700px */
 }
 
 .ketiga {
-    background-image: url(../img/background-3.jpg);
-    background-attachment: fixed;
-    height: auto;
+    background-image: url(../img/background-3.jpg); /* Gambar latar belakang */
+    background-attachment: fixed; /* Gambar latar belakang tetap saat scroll */
+    height: 700px; /* Tinggi tetap 700px */
 }
 
+/* Card Untuk Anggota di Section Tengah */
 .card h5 {
-    padding-top: 20px;
+    padding-top: 20px; /* Padding atas untuk heading 5 di card */
 }
 
 .card h6 {
-    padding: 5px;
+    padding: 5px; /* Padding untuk heading 6 di card */
 }
 
 .card>a {
-    padding: 20px;
+    padding: 20px; /* Padding untuk link di dalam card */
 }
 
+/* Item di Section Tengah */
 .item {
-    display: flex;
-    max-width: 800px;
-    height: auto;
-    background-color: white;
-    flex-direction: row;
-    align-items: center;
-    border-radius: .5em;
-    -webkit-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
-    -moz-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
-    box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+    display: flex; /* Menggunakan flexbox */
+    max-width: 800px; /* Lebar maksimum 800px */
+    height: auto; /* Tinggi otomatis */
+    background-color: white; /* Warna latar belakang putih */
+    flex-direction: row; /* Mengatur arah flex ke baris */
+    align-items: center; /* Mengatur item agar berada di tengah secara vertikal */
+    border-radius: .5em; /* Membulatkan sudut */
+    box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43); /* Menambahkan bayangan */
 }
 
+/* Gambar di dalam Item */
 .img {
-    width: 100%;
-    height: 200px;
-    background-color: lightgrey;
-    background-size: cover;
-    background-position: center;
-    margin-top: 20px;
-    border-radius: .3em;
-    ;
+    width: 100%; /* Lebar 100% */
+    height: 200px; /* Tinggi tetap 200px */
+    background-color: lightgrey; /* Warna latar belakang sementara */
+    background-size: cover; /* Memastikan gambar menutupi area */
+    background-position: center; /* Menempatkan gambar di tengah */
+    margin-top: 20px; /* Margin atas */
+    border-radius: .3em; /* Membulatkan sudut */
 }
 
+/* Row untuk Penataan Item */
 .row {
-    margin-right: 0;
-    margin-left: 0;
-    display: flex;
-    justify-content: space-between;
+    margin-right: 0; /* Menghilangkan margin kanan */
+    margin-left: 0; /* Menghilangkan margin kiri */
+    display: flex; /* Menggunakan flexbox */
+    justify-content: space-between; /* Menjaga jarak antar item */
 }
 
+/* Untuk Foto Profil Pada Section Tengah */
 .foto-profil {
-    width: 50%;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 50%; /* Lebar 50% */
+    height: auto; /* Tinggi otomatis */
+    border-radius: 50%; /* Membulatkan gambar menjadi lingkaran */
+    object-fit: cover; /* Memastikan gambar mengisi area */
 }
 
+/* Untuk Class Kelompok Pada Section Tengah */
 .kelompok {
-    margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
-    color: var(--warna-putih);
-    font-weight: 300;
+    margin: 0 auto; /* Margin otomatis untuk pusat */
+    font-family: "Montserrat", sans-serif; /* Mengatur font untuk kelompok */
+    color: var(--warna-putih); /* Mengatur warna teks */
+    font-weight: 300; /* Menentukan ketebalan font */
 }
 
 .kelompok h1,
@@ -164,41 +231,73 @@ a {
 .kelompok h4,
 .kelompok h5,
 .kelompok h6 {
-    color: var(--warna-putih);
+    color: var(--warna-putih); /* Mengatur warna teks heading */
 }
 
 .kelompok .font-berat-ringan {
-    font-weight: 500;
+    font-weight: 500; /* Menentukan ketebalan font */
 }
 
 .kelompok h5 {
-    line-height: 22px;
-    font-size: 18px;
+    line-height: 22px; /* Mengatur tinggi garis untuk h5 */
+    font-size: 18px; /* Mengatur ukuran font untuk h5 */
 }
 
 .kelompok .subjudul {
-    color: #8d97ad;
-    line-height: 24px;
-    font-size: 13px;
+    color: #8d97ad; /* Mengatur warna subjudul */
+    line-height: 24px; /* Mengatur tinggi garis untuk subjudul */
+    font-size: 13px; /* Mengatur ukuran font untuk subjudul */
 }
 
 .kelompok ul li a {
-    color: #8d97ad;
-    padding-right: 15px;
-    transition: 0.1s ease-in;
+    color: #8d97ad; /* Mengatur warna link dalam daftar */
+    padding-right: 15px; /* Padding kanan untuk link */
+    transition: 0.1s ease-in; /* Efek transisi saat hover */
 }
 
 .kelompok ul li a:hover {
-    transform: translate3d(0px, -5px, 0px);
-    color: #316ce8;
+    transform: translate3d(0px, -5px, 0px); /* Menggerakkan link saat hover */
+    color: #316ce8; /* Mengubah warna saat hover */
 }
 
+/* Untuk Gambar Post pada Section Bawah */
 .post {
-    height: auto;
-    width: 600px;
+    height: auto; /* Tinggi otomatis */
+    width: 500px; /* Lebar tetap 500px */
+    box-shadow: 0 4px 20px var(--warna-putih); /* Menambahkan bayangan */
 }
 
+/* Untuk Kolom Kiri & Kanan */
+.kolom-kiri,
+.kolom-kanan {
+    flex: 1; /* Menggunakan flex 1 untuk proporsi */
+    padding: 20px; /* Mengatur padding */
+}
+
+/* Untuk Kolom Kiri */
+.kolom-kiri {
+    text-align: center; /* Mengatur teks agar berada di tengah */
+}
+
+/* Untuk Kolom Kanan */
+.kolom-kanan {
+    padding: 5%; /* Mengatur padding */
+    display: flex; /* Menggunakan flexbox */
+    text-align: left; /* Mengatur teks ke kiri */
+    color: var(--warna-putih); /* Mengatur warna teks */
+    align-items: flex-start; /* Mengatur item agar berada di atas */
+    justify-content: center; /* Mengatur item agar berada di tengah secara horizontal */
+    flex-direction: column; /* Mengatur arah kolom */
+}
+
+/* Paragraf Untuk Kolom Kanan */
+.kolom-kanan p {
+    text-align: justify; /* Mengatur paragraf agar rata kiri dan kanan */
+    width: 700px; /* Mengatur lebar paragraf */
+}
+
+/* Footer */
 .footer {
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /* Mengatur padding */
+    text-align: center; /* Mengatur teks agar berada di tengah */
 }
