@@ -77,6 +77,29 @@ a {
     cursor: pointer; /* Mengubah kursor saat hover */
 }
 
+.kolom {
+    padding: 10px; /* Mengatur padding */
+    display: flex;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    background-color: var(--warna-putih);
+    border-radius: 0.3em;
+    margin-bottom: 50px;
+}
+
+.logo-redhat {
+    width: 80px; /* Atur ukuran logo Red Hat */
+    height: auto; /* Pertahankan rasio aspek */
+}
+
+.logo-il {
+    width: 70px; /* Atur ukuran logo Il */
+    height: auto; /* Pertahankan rasio aspek */
+}
+
 /* Tag Anchor (Link) pada Section Tengah */
 .kolom-tengah {
     width: 80px; /* Membiarkan lebar otomatis */
@@ -122,7 +145,7 @@ a.none:hover {
     flex-direction: column; /* Mengatur arah kolom */
     align-items: center; /* Mengatur item agar berada di tengah secara horizontal */
     justify-content: center; /* Mengatur item agar berada di tengah secara vertikal */
-    background-image: url(../img/background-1.jpg); /* Menambahkan gambar latar belakang */
+    background-image: url(../img/background/background-1.jpg); /* Menambahkan gambar latar belakang */
     background-size: cover; /* Memastikan gambar menutupi area */
     background-position: center; /* Menempatkan gambar di tengah */
     background-attachment: fixed; /* Gambar latar belakang tetap saat scroll */
@@ -148,19 +171,19 @@ a.none:hover {
 /* Gambar Background Ketiga Section */
 .pertama {
     color: var(--warna-putih); /* Warna teks untuk bagian pertama */
-    background-image: url(../img/background-1.jpg); /* Gambar latar belakang */
+    background-image: url(../img/background/background-1.jpg); /* Gambar latar belakang */
     background-attachment: fixed; /* Gambar latar belakang tetap saat scroll */
     height: auto; /* Tinggi otomatis */
 }
 
 .kedua {
-    background-image: url(../img/background-2.jpg); /* Gambar latar belakang */
+    background-image: url(../img/background/background-2.jpg); /* Gambar latar belakang */
     background-attachment: fixed; /* Gambar latar belakang tetap saat scroll */
     height: 700px; /* Tinggi tetap 700px */
 }
 
 .ketiga {
-    background-image: url(../img/background-3.jpg); /* Gambar latar belakang */
+    background-image: url(../img/background/background-3.jpg); /* Gambar latar belakang */
     background-attachment: fixed; /* Gambar latar belakang tetap saat scroll */
     height: 700px; /* Tinggi tetap 700px */
 }
